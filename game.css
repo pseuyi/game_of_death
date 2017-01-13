@@ -1,9 +1,11 @@
 body {
   padding: 10px;
+  background: grey;
 }
 
-h1, h2 {
+h1, h2, h6 {
   text-align: center;
+  color: yellow;
 }
 #board{
   margin: 0 auto;
@@ -11,19 +13,50 @@ h1, h2 {
 
 #board td{
   border: 1px solid #ddd;
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
 }
 
 td.alive {
-  background-color: #8CC8DD;
+  background-color: yellow;
 }
 
 td.dead {
-  background-color: #fff;
+  background-color: grey;
 }
 
 #control_panel {
   margin: 10px auto;
   text-align: center;
+}
+.text-muted a{
+  color: yellow;
+  text-decoration: underline;
+}
+.btn {
+  border-radius: 0;
+  background: white;
+  color: grey;
+  font-size: 10px;
+  padding: 0.4em;
+}
+#slider {
+  display: block;
+  margin: auto;
+}
+label {
+  display: inline-block;
+  color: white;
+  font-size: 10px;
+  padding: 0.4em;
+  font-weight: 400;
+  vertical-align: top;
+  margin-top: 1em;
+}
+input[type=range] {
+  display: inline-block;
+  width: 10%;
+  height: 80%;
+  margin: 0 1em;
+  padding: 1em;
 }
