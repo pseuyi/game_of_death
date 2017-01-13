@@ -9,6 +9,7 @@ h1, h2, h6 {
 }
 #board{
   margin: 0 auto;
+/*  background-color: yellow;*/
 }
 
 #board td{
@@ -18,11 +19,15 @@ h1, h2, h6 {
 }
 
 td.alive {
-  background-color: yellow;
+  background-image: url('assets/tidepool.jpg');
+/*  background-color: yellow;*/
 }
 
 td.dead {
   background-color: grey;
+}
+td.tidepool {
+  background: none;
 }
 
 #control_panel {
